@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/zm_ui_kit_color_white_ffffff" />
+    <stroke android:width="1.0dip" android:color="@color/zm_ui_kit_color_blue_0E71EB" />
+    <corners android:radius="@dimen/zm_ui_kit_button_corners" />
+</shape>

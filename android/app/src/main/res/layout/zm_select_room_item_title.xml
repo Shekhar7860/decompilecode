@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/zm_round_rect_white_r8" android:paddingLeft="@dimen/zm_padding_normal" android:paddingTop="@dimen/zm_padding_medium" android:paddingRight="@dimen/zm_padding_normal" android:paddingBottom="@dimen/zm_padding_medium" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/zm_ui_kit_color_gray_747487" android:ellipsize="end" android:id="@id/txtTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Blue Jeans Parrot Demo" android:singleLine="true" style="@style/ZMTextView.OnLight.Medium" />
+</RelativeLayout>

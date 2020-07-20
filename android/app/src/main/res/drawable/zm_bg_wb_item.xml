@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector android:enterFadeDuration="500" android:exitFadeDuration="500"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@drawable/zm_corner_bg_white_blue" />
+    <item android:drawable="@drawable/zm_corner_bg_white" />
+</selector>

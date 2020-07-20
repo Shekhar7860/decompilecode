@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/floating_view_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/message_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/emoji_panel_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.zipow.videobox.view.mm.ReactionEmojiSampleView android:id="@id/reaction_emoji_sample_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:id="@id/blank" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <ViewStub android:id="@id/emoji_panel_view_stub" android:layout="@layout/zm_reaction_emoji_panel_view" android:layout_width="fill_parent" android:layout_height="270.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

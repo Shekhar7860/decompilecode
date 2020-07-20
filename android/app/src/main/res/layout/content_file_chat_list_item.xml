@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="left|center" android:orientation="horizontal" android:background="@drawable/zm_list_selector_background" android:paddingLeft="10.0dip" android:paddingTop="2.0dip" android:paddingRight="10.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:duplicateParentState="true" android:layout_width="57.0dip" android:layout_height="57.0dip">
+        <com.zipow.videobox.view.AvatarView android:id="@id/avatarView" android:duplicateParentState="true" android:layout_width="51.0dip" android:layout_height="51.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" zoom:zm_cornerRadiusRatio="0.32" zoom:zm_description_enable="false" />
+        <com.zipow.videobox.view.PresenceStateView android:id="@id/imgPresence" android:paddingTop="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" zoom:zm_subpresence_type="0" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="left|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip">
+        <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_weight="1.0">
+                <ImageView android:id="@id/imgE2EFlag" android:paddingTop="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_e2e_flag" />
+                <us.zoom.androidlib.widget.ZMEllipsisTextView android:ellipsize="end" android:id="@id/txtTitle" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:maxLines="1" android:singleLine="true" android:drawablePadding="5.0dip" style="@style/UIKitTextView.CellTitle" />
+            </LinearLayout>
+            <TextView android:ellipsize="end" android:id="@id/txtTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:maxLines="1" style="@style/UIKitTextView.SecondaryText.Small.Dimmed" />
+        </LinearLayout>
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.zipow.videobox.view.EmojiTextView android:ellipsize="end" android:id="@id/txtMessage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:layout_toLeftOf="@id/hint_layout" style="@style/UIKitTextView.SecondaryText.Small.Dimmed" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/hint_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                <View android:gravity="center" android:id="@id/unreadBubble" android:background="@drawable/zm_ic_red_dot" android:visibility="gone" android:duplicateParentState="true" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginRight="5.0dip" android:text="" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                <ImageView android:id="@id/imgBell" android:visibility="gone" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/zm_bell" />
+                <TextView android:gravity="center" android:id="@id/txtNoteBubble" android:visibility="visible" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" style="@style/ZMTextView.UnreadMessageCount.Small" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="164.0dip" android:width="164.0dip" android:stackViewStyle="164.0" android:numberPickerStyle="164.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <group>
+        <clip-path android:activityChooserViewStyle="M56 0H108C138.928 0 164 25.0721 164 56V108C164 138.928 138.928 164 108 164H56C25.0721 164 0 138.928 0 108V56C0 25.0721 25.0721 0 56 0Z" />
+        <path android:timePickerStyle="#90ffffff" android:activityChooserViewStyle="M0 0V164H164V0" />
+    </group>
+</vector>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="left|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/zm_mm_presence_available" android:gravity="right" android:id="@id/txtDeviceType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/zm_lbl_desktop_online_33945" style="@style/ZMTextView.Small" />
+    <ImageView android:id="@id/imgPresences" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_status_available" />
+</LinearLayout>

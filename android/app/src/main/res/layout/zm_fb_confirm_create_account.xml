@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="32.0dip" android:paddingTop="16.0dip" android:paddingRight="32.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/avatarView" android:duplicateParentState="true" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+            <TextView android:gravity="center" android:id="@id/txtHi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/zm_msg_confirm_hi_create_account_31350" style="@style/ZMTextView.Large.DialogTitle" />
+            <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/zm_msg_confirm_create_account_31350" style="@style/ZMTextView.Normal.Dimmed" />
+            <TextView android:textStyle="bold" android:gravity="center" android:id="@id/txtEmail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" style="@style/ZMTextView.Normal.OnLight" />
+            <TextView android:gravity="center" android:id="@id/txtTerms" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:text="@string/zm_msg_confirm_terms_create_account_31350" style="@style/ZMTextView.Normal.Dimmed" />
+        </LinearLayout>
+    </ScrollView>
+    <Button android:id="@id/btnCreateAccount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="32.0dip" android:layout_marginBottom="10.0dip" android:text="@string/zm_btn_create_account_31350" style="@style/ZMButton.HappyPath2" />
+</LinearLayout>

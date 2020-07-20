@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/zm_check_highlight_selection_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_marginBottom="1.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imgCheck" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_check_highlight_selection" />
+    <TextView android:textColor="@drawable/zm_highlight_selection_text_color" android:id="@id/txtContent" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Text" style="@style/ZMTextView.Normal" />
+</LinearLayout>

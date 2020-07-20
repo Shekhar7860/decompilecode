@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/zm_white" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/btnSearchMore" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/zm_btn_view_more" style="@style/ZMButton.NoBackground.Medium" />
+</LinearLayout>

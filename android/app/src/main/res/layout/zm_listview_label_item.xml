@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/zm_ui_kit_color_gray_F7F7FA" android:paddingLeft="10.0dip" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imgLabel" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:src="@drawable/zm_mm_starred_list_head_icon" />
+    <TextView android:id="@id/txtHeaderLabel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:layout_weight="1.0" style="@style/UIKitTextView.SecondaryText.Small.Dimmed" />
+</LinearLayout>

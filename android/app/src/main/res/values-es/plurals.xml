@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="zm_accessibility_reacion_label_88133">
+        <item quantity="other">%1$s, %2$d usuarios añadieron esta reacción, botón</item>
+        <item quantity="one">%1$s, %2$d usuario añadió esta reacción, botón</item>
+    </plurals>
+    <plurals name="zm_accessibility_view_reply_88133">
+        <item quantity="other">Ver %d respuestas</item>
+        <item quantity="one">Ver %d respuesta</item>
+    </plurals>
+    <plurals name="zm_accessibility_view_reply_new_all_88133">
+        <item quantity="other">, %d nuevas menciones @todos</item>
+        <item quantity="one">, %d nueva mención @todos</item>
+    </plurals>
+    <plurals name="zm_accessibility_view_reply_new_me_88133">
+        <item quantity="other">, %d nuevas menciones @yo</item>
+        <item quantity="one">, %d nueva mención @yo</item>
+    </plurals>
+    <plurals name="zm_accessibility_view_reply_new_msg_88133">
+        <item quantity="other">, %d nuevos mensajes</item>
+        <item quantity="one">, %d nuevo mensaje</item>
+    </plurals>
+    <plurals name="zm_accessibility_waiting_room_unread_message_button_46304">
+        <item quantity="other">%s nuevos mensajes, botón</item>
+        <item quantity="one">%s nuevo mensaje, botón</item>
+    </plurals>
+    <plurals name="zm_add_buddy_time_exceed_44781">
+        <item quantity="other">Ha llevado a cabo numerosos intentos incorrectos. Inténtelo de nuevo en %d minutos.</item>
+        <item quantity="one">Ha llevado a cabo numerosos intentos incorrectos. Inténtelo de nuevo en un minuto.</item>
+    </plurals>
+    <plurals name="zm_description_tab_chats_77383">
+        <item quantity="other">Pestaña %s mensajes no leídos de reuniones y chats</item>
+        <item quantity="one">Pestaña %s mensaje no leído de reuniones y chats</item>
+    </plurals>
+    <plurals name="zm_lbl_comment_more_reply_88133">
+        <item quantity="other">%d respuestas</item>
+        <item quantity="one">1 respuesta</item>
+    </plurals>
+    <plurals name="zm_lbl_comment_reply_title_88133">
+        <item quantity="other">%d respuestas</item>
+        <item quantity="one">1 respuesta</item>
+    </plurals>
+    <plurals name="zm_lbl_folder_items">
+        <item quantity="other">%d elementos</item>
+        <item quantity="one">1 elemento</item>
+    </plurals>
+    <plurals name="zm_lbl_mark_unread_68444">
+        <item quantity="other">%d Marcar como no leído</item>
+        <item quantity="one">Marcar como no leído</item>
+    </plurals>
+    <plurals name="zm_lbl_message_at_all_68444">
+        <item quantity="other">%d ＠todos</item>
+        <item quantity="one">＠todos</item>
+    </plurals>
+    <plurals name="zm_lbl_message_at_me_68444">
+        <item quantity="other">%d ＠me</item>
+        <item quantity="one">＠me</item>
+    </plurals>
+    <plurals name="zm_lbl_new_unread_thread_88133">
+        <item quantity="other">%s nuevos mensajes</item>
+        <item quantity="one">1 nuevo mensaje</item>
+    </plurals>
+    <plurals name="zm_lbl_notification_snoozed_hour_19898">
+        <item quantity="other">%d horas</item>
+        <item quantity="one">1 hora</item>
+    </plurals>
+    <plurals name="zm_lbl_notification_snoozed_min_19898">
+        <item quantity="other">%d mins</item>
+        <item quantity="one">1 min</item>
+    </plurals>
+    <plurals name="zm_lbl_webinar_telephony_user_count">
+        <item quantity="other">Total de %d oyentes por llamada telefónica entrante</item>
+        <item quantity="one">Total de 1 oyente por llamada telefónica entrante</item>
+    </plurals>
+    <plurals name="zm_mm_lbl_new_message_count_14491">
+        <item quantity="other">↑%s nuevos mensajes</item>
+        <item quantity="one">↑%s nuevo mensaje</item>
+    </plurals>
+    <plurals name="zm_mm_msg_day_33479">
+        <item quantity="other">%d días</item>
+        <item quantity="one">1 día</item>
+    </plurals>
+    <plurals name="zm_mm_msg_hour_33479">
+        <item quantity="other">%d horas</item>
+        <item quantity="one">1 hora</item>
+    </plurals>
+    <plurals name="zm_mm_msg_month_33479">
+        <item quantity="other">%d meses</item>
+        <item quantity="one">1 mes</item>
+    </plurals>
+    <plurals name="zm_mm_msg_year_33479">
+        <item quantity="other">%d años</item>
+        <item quantity="one">1 año</item>
+    </plurals>
+    <plurals name="zm_mm_template_attachments_68416">
+        <item quantity="other">%1$d archivos adjuntos</item>
+        <item quantity="one">1 archivo adjunto</item>
+    </plurals>
+    <plurals name="zm_msg_charactors_left">
+        <item quantity="other">Quedan %d caracteres</item>
+        <item quantity="one">Queda 1 carácter</item>
+    </plurals>
+    <plurals name="zm_msg_hint_add_contact_group_68451">
+        <item quantity="other">%1$d contactos añadidos a %2$s</item>
+        <item quantity="one">%1$d contactos añadidos a %2$s</item>
+    </plurals>
+    <plurals name="zm_msg_invitations_sent">
+        <item quantity="other">Se enviaron %d invitaciones</item>
+        <item quantity="one">Se envió 1 invitación</item>
+    </plurals>
+    <plurals name="zm_msg_join_meeting_in_waiting_list">
+        <item quantity="other">%d personas han ingresado a la sala de espera para esta reunión</item>
+        <item quantity="one">1 persona ha ingresado a la sala de espera para esta reunión</item>
+    </plurals>
+    <plurals name="zm_msg_notification_unread_num_8295">
+        <item quantity="other">%1$s(%2$d mensajes no leídos)</item>
+        <item quantity="one">%1$s(1 mensaje no leídos)</item>
+    </plurals>
+    <plurals name="zm_pbx_voicemail_filter_inboxes_100064">
+        <item quantity="other">Buzones de entrada de %1$s</item>
+        <item quantity="one">Buzón de entrada de %1$s</item>
+    </plurals>
+    <plurals name="zm_sip_calls_text_111498">
+        <item quantity="other">%1$d llamadas</item>
+        <item quantity="one">1 llamada</item>
+    </plurals>
+    <plurals name="zm_sip_delete_x_items_61381">
+        <item quantity="other">Eliminar %d elementos</item>
+        <item quantity="one">Eliminar 1 elemento</item>
+    </plurals>
+    <plurals name="zm_title_edit_emoji_selected">
+        <item quantity="other">Emojis de %d seleccionados.</item>
+        <item quantity="one">Un emoji seleccionado</item>
+    </plurals>
+</resources>

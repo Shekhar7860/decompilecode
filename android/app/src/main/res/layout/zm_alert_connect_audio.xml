@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/zm_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:paddingBottom="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <ImageView android:id="@id/imgAudioConnected" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/zm_audio_connected" />
+        <TextView android:ellipsize="end" android:gravity="center" android:id="@id/txtTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_title_audio_not_connected_45416" style="@style/ZMTextView.Large.DialogTitle" />
+    </LinearLayout>
+    <TextView android:gravity="center" android:id="@id/txtMsg" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="@string/zm_msg_audio_not_connected_45416" style="@style/ZMTextView.Normal.DialogMsg" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/zm_split_bg" android:paddingTop="0.5dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+        <Button android:gravity="center" android:layout_gravity="right|center" android:id="@id/btCancel" android:padding="15.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="0.5dip" android:text="@string/zm_btn_cancel" android:maxLines="2" android:layout_weight="1.0" style="@style/ZMButton.Dialog" />
+        <Button android:textColor="@color/zm_popitem_text_color" android:gravity="center" android:layout_gravity="left|center" android:id="@id/btRaiseHand" android:padding="15.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/zm_btn_raise_hand" android:maxLines="2" android:layout_weight="1.0" style="@style/ZMButton.Dialog.HappyPath" />
+    </LinearLayout>
+</LinearLayout>

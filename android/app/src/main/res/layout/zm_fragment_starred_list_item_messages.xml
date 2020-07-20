@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <com.zipow.videobox.view.AvatarView android:id="@id/zm_starred_list_item_avatarView" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginLeft="15.0dip" />
+        <TextView android:id="@id/zm_starred_list_item_Name" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="21.0dip" android:singleLine="true" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="right|center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/zm_starred_list_item_star_btn" android:padding="9.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/zm_starred_message_arrow" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

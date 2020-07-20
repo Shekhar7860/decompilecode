@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/zm_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.androidlib.widget.ZMMenuListView android:id="@id/menuListView" android:layout_width="fill_parent" android:layout_height="wrap_content" zoom:zm_auto_compute_width="true" />
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/color_select" android:layout_width="240.0dip" android:layout_height="182.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/show_arrow_up" android:background="@drawable/zm_shape_triangle" android:visibility="visible" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginTop="-6.0dip" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/zm_corner_bg_gray_9" android:layout_width="fill_parent" android:layout_height="172.0dip">
+        <TextView android:textColor="@color/zm_ui_kit_color_gray_BABACC" android:gravity="center" android:layout_gravity="left|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="5.0dip" android:text="@string/zm_msg_line_width_81493" />
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:focusable="false" android:layout_width="wrap_content" android:layout_height="40.0dip">
+            <ImageView android:id="@id/show_width_2" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/zm_icon_width_2" android:scaleType="centerInside" android:contentDescription="@string/zm_accessibility_2_pixcels_81493" />
+            <ImageView android:id="@id/show_width_4" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginLeft="18.0dip" android:src="@drawable/zm_icon_width_4" android:scaleType="centerInside" android:contentDescription="@string/zm_accessibility_4_pixcels_81493" />
+            <ImageView android:id="@id/show_width_8" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginLeft="18.0dip" android:src="@drawable/zm_icon_width_8" android:scaleType="centerInside" android:contentDescription="@string/zm_accessibility_8_pixcels_81493" />
+            <ImageView android:id="@id/show_width_12" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginLeft="18.0dip" android:src="@drawable/zm_icon_width_12" android:scaleType="centerInside" android:contentDescription="@string/zm_accessibility_12_pixcels_81493" />
+        </LinearLayout>
+        <TextView android:textColor="@color/zm_ui_kit_color_gray_BABACC" android:gravity="center" android:layout_gravity="left|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="5.0dip" android:text="@string/zm_msg_colors_81493" />
+        <com.zipow.videobox.share.ColorTable android:layout_gravity="center_horizontal" android:id="@id/colorTable" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/show_arrow_down" android:background="@drawable/zm_shape_reverse_triangle" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="16.0dip" />
+</LinearLayout>

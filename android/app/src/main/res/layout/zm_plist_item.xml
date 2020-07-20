@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="left|center" android:orientation="horizontal" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/imgAttention" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/zm_ic_distract" />
+    <com.zipow.videobox.view.AvatarView android:id="@id/avatarView" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="1.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="1.0dip" zoom:zm_description_enable="false" />
+    <com.zipow.videobox.view.PListNameRoleLayout android:orientation="horizontal" android:paddingRight="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:ellipsize="end" android:id="@id/txtScreenName" android:paddingRight="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/UIKitTextView.BuddyName.Normal" />
+        <TextView android:id="@id/txtRole" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(host, me)" android:singleLine="true" style="@style/ZMTextView.Small.Dimmed" />
+    </com.zipow.videobox.view.PListNameRoleLayout>
+    <LinearLayout android:gravity="right|center" android:paddingRight="0.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <TextView android:gravity="center" android:id="@id/txtUnreadMessageCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="9+" style="@style/ZMTextView.UnreadMessageCount" />
+        <ImageView android:id="@id/imgCc" android:padding="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_cc" />
+        <ImageView android:id="@id/imgRecording" android:padding="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_ic_local_recording" />
+        <ImageView android:id="@id/imgCMRRecording" android:padding="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_ic_cmr" />
+        <ImageView android:id="@id/imgRaiseHand" android:padding="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_ic_raise_hand" />
+        <ImageView android:id="@id/imgLan" android:padding="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/zm_lan_unitedstates" />
+        <ImageView android:id="@id/imgPureAudio" android:padding="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_btn_voice" />
+        <ImageView android:id="@id/imgVideo" android:padding="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_video_on" />
+        <ImageView android:id="@id/imgAudio" android:padding="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_audio_on" />
+        <ImageView android:id="@id/imgArrow" android:padding="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_next_arrow" />
+    </LinearLayout>
+</LinearLayout>

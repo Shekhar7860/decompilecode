@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/zm_im_search_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@color/zm_title_bar_dark_bg" android:layout_width="fill_parent" android:layout_height="@dimen/zm_titlebar_height">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/zm_file_chat_list_title_cancel_btn" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:contentDescription="@string/zm_btn_back" style="@style/ZMBackButton" />
+        <TextView android:textSize="17.0sp" android:textColor="@color/zm_white" android:layout_gravity="center" android:id="@id/zm_file_chat_list_title_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_content_file_list_title_text_89710" />
+    </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/content_file_list_view" android:background="@drawable/zm_listview_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

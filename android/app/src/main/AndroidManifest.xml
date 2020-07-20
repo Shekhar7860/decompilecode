@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="29" android:compileSdkVersionCodename="10" package="com.classprostudentapp" platformBuildVersionCode="29" platformBuildVersionName="10">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-feature android:glEsVersion="0x00020000"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="false"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:name="com.classprostudentapp.MainApplication" android:roundIcon="@mipmap/ic_launcher_round" android:theme="@style/AppTheme">
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:name="com.classprostudentapp.MainActivity" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity"/>
+        <meta-data android:name="firebase_crashlytics_collection_enabled" android:value="false"/>
+        <provider android:authorities="com.classprostudentapp.reactnativefirebasecrashlyticsinitprovider" android:exported="false" android:initOrder="98" android:name="io.invertase.firebase.crashlytics.ReactNativeFirebaseCrashlyticsInitProvider"/>
+        <service android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingHeadlessService"/>
+        <service android:exported="false" android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="true" android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="firebase_messaging_auto_init_enabled" android:value="false"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_channel_id" android:value="default_channel"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/primaryColor"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.learnium.RNDeviceInfo.RNDeviceReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.classprostudentapp.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.imagepicker.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <service android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.classprostudentapp.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <provider android:authorities="com.classprostudentapp.crashlyticsinitprovider" android:exported="false" android:initOrder="90" android:name="com.crashlytics.android.CrashlyticsInitProvider"/>
+        <meta-data android:name="firebase_crashlytics_ndk_enabled" android:value="true"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.zipow.videobox.JoinByURLActivity" android:theme="@style/ZMTheme.Transparent"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.zipow.videobox.IntegrationActivity" android:theme="@style/ZMTheme.Transparent"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.zipow.videobox.MeetingEndMessageActivity" android:theme="@style/ZMDialog.Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:launchMode="singleTask" android:name="com.zipow.videobox.JoinMeetingFailActivity" android:theme="@style/ZMDialog.Transparent"/>
+        <activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="false" android:name="com.zipow.videobox.ConfActivityNormal" android:theme="@style/ZMTheme.SubWindow"/>
+        <activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="false" android:name="com.zipow.videobox.PListActivity" android:theme="@style/ZMTheme.SubWindow"/>
+        <activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="false" android:name="com.zipow.videobox.InMeetingSettingsActivity" android:theme="@style/ZMTheme.SubWindow"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.zipow.videobox.ConfChatActivityOld" android:theme="@style/ZMTheme.SubWindow"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.zipow.videobox.MeetingRunningInfoActivity" android:theme="@style/ZMTheme.SubWindow"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.zipow.videobox.CallInActivity" android:theme="@style/ZMTheme.SubWindow"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.zipow.videobox.SimpleActivity" android:theme="@style/ZMTheme.SubWindow" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.zipow.videobox.SimpleInMeetingActivity" android:theme="@style/ZMTheme.SubWindow" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.zipow.videobox.poll.PollingActivity" android:theme="@style/ZMTheme.SubWindow"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.zipow.videobox.poll.WebinarPollingActivity" android:theme="@style/ZMTheme.SubWindow"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.zipow.videobox.poll.PollingResultActivity" android:theme="@style/ZMTheme.SubWindow"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.zipow.videobox.poll.WebinarPollingResultActivity" android:theme="@style/ZMTheme.SubWindow"/>
+        <activity android:configChanges="orientation|screenSize" android:name="us.zoom.androidlib.app.ZMFileListActivity" android:theme="@style/ZMTheme.SubWindow"/>
+        <service android:exported="false" android:label="@string/zm_app_name" android:name="com.zipow.videobox.kubi.KubiService"/>
+        <service android:exported="false" android:name="com.zipow.videobox.OnClearFromRecentService"/>
+        <service android:exported="false" android:foregroundServiceType="0x00000020" android:label="@string/zm_app_name" android:name="com.zipow.videobox.share.ScreenShareServiceForSDK"/>
+    </application>
+</manifest>

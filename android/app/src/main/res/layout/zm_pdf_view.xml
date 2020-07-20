@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/pageContainer" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.zipow.videobox.pdf.PDFViewPage android:id="@id/pdfPageView" android:background="@color/zm_black" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <SeekBar android:id="@id/pdfSeekBar" android:paddingLeft="16.0dip" android:paddingTop="12.0dip" android:paddingRight="16.0dip" android:paddingBottom="12.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:layout_alignParentStart="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/thumbInfo" android:background="#8f808080" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="150.0dip" android:layout_above="@id/pdfSeekBar" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/thumbImage" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="110.0dip" android:layout_margin="8.0dip" />
+        <TextView android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@id/pageNum" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="第100页" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@id/optionHostVideo" style="@style/ZMScheduleItemLayout">
+            <TextView android:text="@string/zm_chk_host_video_on_21201" style="@style/ZMScheduleCheckTitleTextView" />
+            <us.zoom.androidlib.widget.ZMCheckedTextView android:id="@id/chkHostVideo" style="@style/ZMScheduleCheckBox" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/optionAttendeeVideo" style="@style/ZMScheduleItemLayout">
+            <TextView android:text="@string/zm_chk_attendee_video_on_21201" style="@style/ZMScheduleCheckTitleTextView" />
+            <us.zoom.androidlib.widget.ZMCheckedTextView android:id="@id/chkAttendeeVideo" style="@style/ZMScheduleCheckBox" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/optionAudio" android:paddingTop="@dimen/zm_setting_item_padding_top" android:paddingRight="@dimen/zm_setting_item_padding_right" android:paddingBottom="@dimen/zm_setting_item_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:paddingRight="0.0dip" style="@style/ZMScheduleItemLayout">
+                <TextView android:layout_gravity="left" android:paddingTop="0.0dip" android:paddingBottom="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="0.0dip" android:text="@string/zm_lbl_audio_option_21201" style="@style/ZMTextView.SettingsItem.Small" />
+                <TextView android:id="@id/txtAudioOption" android:text="@string/zm_lbl_audio_option_voip_and_telephony_detail" style="@style/ZMScheduleSelectTextView" />
+                <ImageView style="@style/ZMScheduleRightArrowImageView" />
+            </LinearLayout>
+            <TextView android:id="@id/txtDialInDesc" android:paddingLeft="@dimen/zm_setting_item_padding_left" android:paddingTop="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ZMTextView.Normal.Dimmed" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/option3rdPartyAudioInfo" android:paddingLeft="@dimen/zm_setting_item_padding_left" android:paddingRight="@dimen/zm_setting_item_padding_right" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:id="@id/edt3rdPartyAudioInfo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/zm_hint_enter_3rd_party_audio_info" android:maxLength="1024" style="@style/ZMEditText.SettingsItem" />
+        </LinearLayout>
+        <TextView android:textColor="@color/zm_addon_title_label_bg" android:layout_gravity="left|center" android:id="@id/tvAdvancedOptions" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/zm_btn_schedule_advanced_options_21201" style="@style/ZMTextView.SettingsItem.Small" />
+        <LinearLayout android:id="@id/optionEnableWaitingRoom" style="@style/ZMScheduleItemLayout">
+            <TextView android:text="@string/zm_lbl_enable_waiting_room_66422" style="@style/ZMScheduleCheckTitleTextView" />
+            <us.zoom.androidlib.widget.ZMCheckedTextView android:id="@id/chkEnableWaitingRoom" style="@style/ZMScheduleCheckBox" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/optionEnableJBH" style="@style/ZMScheduleItemLayout">
+            <TextView android:text="@string/zm_chk_enable_jbh_21201" style="@style/ZMScheduleCheckTitleTextView" />
+            <us.zoom.androidlib.widget.ZMCheckedTextView android:id="@id/chkEnableJBH" style="@style/ZMScheduleCheckBox" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/optionOnlySignJoin" style="@style/ZMScheduleItemLayout">
+            <TextView android:text="@string/zm_chk_only_sign_join_21201" style="@style/ZMScheduleCheckTitleTextView" />
+            <us.zoom.androidlib.widget.ZMCheckedTextView android:id="@id/chkOnlySignJoin" style="@style/ZMScheduleCheckBox" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/optionEnableCNMeeting" style="@style/ZMScheduleItemLayout">
+            <TextView android:text="@string/zm_chk_host_cn_meeting" style="@style/ZMScheduleCheckTitleTextView" />
+            <us.zoom.androidlib.widget.ZMCheckedTextView android:id="@id/chkEnableCNMeeting" style="@style/ZMScheduleCheckBox" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/optionJoinUserType" style="@style/ZMScheduleItemLayout">
+            <TextView android:text="@string/zm_lbl_allow_join_meeting" style="@style/ZMScheduleSelectTitleTextView" />
+            <TextView android:id="@id/txtJoinUserType" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" style="@style/ZMScheduleSelectTextView" />
+            <ImageView style="@style/ZMScheduleRightArrowImageView" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/optionAudioWaterMark" style="@style/ZMScheduleItemLayout">
+            <TextView android:text="@string/zm_chk_audio_watermark_53180" style="@style/ZMScheduleCheckTitleTextView" />
+            <us.zoom.androidlib.widget.ZMCheckedTextView android:id="@id/chkAudioWaterMark" style="@style/ZMScheduleCheckBox" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/optionAutoRecording" style="@style/ZMScheduleItemLayout">
+            <TextView android:text="@string/zm_chk_auto_recording_57100" style="@style/ZMScheduleCheckTitleTextView" />
+            <us.zoom.androidlib.widget.ZMCheckedTextView android:id="@id/chkAutoRecording" style="@style/ZMScheduleCheckBox" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/optionRecordLocation" style="@style/ZMScheduleItemLayout">
+            <TextView android:text="@string/zm_lbl_record_location_57100" style="@style/ZMScheduleSelectTitleTextView" />
+            <TextView android:id="@id/txtRecordLocationDesc" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" style="@style/ZMScheduleSelectTextView" />
+            <ImageView style="@style/ZMScheduleRightArrowImageView" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/optionAlterHost" style="@style/ZMScheduleItemLayout">
+            <TextView android:text="@string/zm_lbl_schedule_alter_host_21201" style="@style/ZMScheduleSelectTitleTextView" />
+            <TextView android:id="@id/txtAlterHost" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:singleLine="true" style="@style/ZMScheduleSelectTextView" />
+            <ImageView style="@style/ZMScheduleRightArrowImageView" />
+        </LinearLayout>
+    </us.zoom.androidlib.widget.ZMSettingsCategory>
+</LinearLayout>

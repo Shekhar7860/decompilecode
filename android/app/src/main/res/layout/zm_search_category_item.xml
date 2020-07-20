@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/zm_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/viewPaddingTop" android:background="@color/zm_im_search_bar_bg" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <TextView android:textColor="@color/zm_im_search_text_hint" android:gravity="left|center" android:id="@id/txtCategoryItem" android:layout_width="fill_parent" android:layout_height="30.0dip" style="@style/ZMTextView.SettingsItemDesc" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imgOutCall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/zm_ic_outgoing_call" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+        <TextView android:id="@id/txtBuddyName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/UIKitTextView.BuddyName.Normal" />
+        <TextView android:textColor="@color/zm_call_history_number" android:id="@id/txtCallNo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/ZMTextView.Small.Dimmed" />
+    </LinearLayout>
+    <TextView android:id="@id/txtCallTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="yesterday" style="@style/ZMTextView.Small.Dimmed" />
+    <ImageView android:id="@id/imgDeleteCall" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_mm_buddy_remove_btn" />
+</LinearLayout>

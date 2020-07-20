@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="left|center" android:orientation="horizontal" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="46.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imgCountryFlag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/zm_flag_us" android:scaleType="center" />
+    <TextView android:id="@id/txtCountryName" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="United States" android:singleLine="true" android:layout_weight="1.0" style="@style/ZMTextView.Medium.OnLight" />
+</LinearLayout>

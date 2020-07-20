@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <EditText android:id="@id/forFocus" android:layout_width="1.0dip" android:layout_height="1.0dip" android:layout_marginTop="-2.0dip" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/zm_pt_titlebar_height">
+            <RelativeLayout android:id="@id/panelSearchBarReal" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/zm_pt_titlebar_height" style="@style/ZMTitleBar">
+                <RelativeLayout android:background="@drawable/zm_search_corner_bg" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:id="@id/imgSearch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/zm_ic_search" android:layout_centerVertical="true" />
+                    <EditText android:id="@id/edtSearchReal" android:paddingRight="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/zm_hint_search_im_18680" android:layout_toRightOf="@id/imgSearch" android:layout_centerVertical="true" android:imeOptions="actionDone" style="@style/ZMEditText.GlobalSearch" />
+                    <Button android:id="@id/btnClearSearchView" android:background="@drawable/zm_btn_clear_search_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/zm_description_mm_btn_clear_search_75317" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/panelTitleBar" android:layout_width="fill_parent" android:layout_height="@dimen/zm_pt_titlebar_height" style="@style/ZMTitleBar.Dark">
+                <RelativeLayout android:orientation="vertical" android:id="@id/panelTabContacts" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:textColor="@drawable/zm_title_tab_text_color" android:id="@id/txtTabLabel" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_title_addrbook" android:layout_centerInParent="true" style="@style/ZMTextView.Large" />
+                    <View android:background="@drawable/zm_title_tab_indicator_color" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <RelativeLayout android:orientation="vertical" android:id="@id/panelTabGroups" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:textColor="@drawable/zm_title_tab_text_color" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_tab_content_groups_59554" android:layout_centerInParent="true" style="@style/ZMTextView.Large" />
+                    <View android:background="@drawable/zm_title_tab_indicator_color" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <RelativeLayout android:orientation="vertical" android:id="@id/panelTabApps" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:textColor="@drawable/zm_title_tab_text_color" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_mm_lbl_apps_contacts_68451" android:layout_centerInParent="true" style="@style/ZMTextView.Large" />
+                    <View android:background="@drawable/zm_title_tab_indicator_color" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip">
+                    <ImageButton android:id="@id/btnSearch" android:background="@null" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/zm_ic_search_ondark" android:contentDescription="@string/zm_description_mm_btn_search" />
+                    <ImageButton android:id="@id/btnInvite" android:background="@null" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/zm_ic_add_ondark" android:contentDescription="@string/zm_description_mm_btn_add_contacts" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/panelGroupsOperator" android:background="@color/zm_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/panelGroupsBtn" android:background="@color/zm_white" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/panelNewGroup" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_mm_title_btn_contact" />
+                    <TextView android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_new_group_59554" style="@style/ZMButton.NoBackground.Small" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/panelJoinPublicGroup" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_mm_title_btn_contact" />
+                    <TextView android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_join_public_group_59554" style="@style/ZMButton.NoBackground.Small" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/zm_dim" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/panelGroupSearchBar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:textColorHint="@color/zm_im_search_text_hint" android:id="@id/edtGroupSearch" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/zm_hint_search_groups_59554" android:imeOptions="actionDone" style="@style/ZMEditText.ContextSearch" />
+            <ImageView android:background="@drawable/zm_ic_titlebar_shadow" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/panelAppSearchBar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:textColorHint="@color/zm_im_search_text_hint" android:id="@id/edtAppSearch" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/zm_hint_search_zoom_apps_68451" android:imeOptions="actionDone" style="@style/ZMEditText.ContextSearch" />
+            <ImageView android:background="@drawable/zm_ic_titlebar_shadow" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/panelSearchBar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:textColorHint="@color/zm_im_search_text_hint" android:id="@id/edtSearch" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/zm_hint_search_contacts" android:imeOptions="actionDone" style="@style/ZMEditText.ContextSearch" />
+            <ImageView android:background="@drawable/zm_ic_titlebar_shadow" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+        </RelativeLayout>
+        <com.zipow.videobox.view.mm.MMConnectAlertView android:orientation="vertical" android:id="@id/panelConnectionAlert" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <FrameLayout android:id="@id/panelGroups" android:background="@drawable/zm_listview_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.zipow.videobox.view.mm.MMContactsGroupListView android:id="@id/groupsListView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/panelGroupsNoItemMsg" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <include layout="@layout/zm_image_no_buddy" />
+                <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_msg_no_zoom_groups_59554" style="@style/ZMTextView.Large.OnLight" />
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@id/panelApps" android:background="@drawable/zm_listview_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.zipow.videobox.view.mm.MMContactsAppsListView android:id="@id/appsListView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" android:dividerHeight="0.0dip" />
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/panelAppsNoItemMsg" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <include android:id="@id/imgNoBuddy" layout="@layout/zm_image_no_buddy" />
+                <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_msg_no_apps_68451" style="@style/ZMTextView.Large.OnLight" />
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@id/panelContacts" android:background="@drawable/zm_listview_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.zipow.videobox.view.IMDirectoryRecyclerView android:id="@id/directoryRecyclerView" android:background="@color/zm_white" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/panelNoItemMsg" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <include android:id="@id/imgNoBuddy" layout="@layout/zm_image_no_buddy" />
+                <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/txtNoContactsMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_msg_no_zoom_contacts" style="@style/ZMTextView.Large.OnLight" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <ViewStub android:id="@id/addContactViewStub" android:layout="@layout/zm_addrbook_add_contact_fte_view" android:inflatedId="@id/emptyViewInflate" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

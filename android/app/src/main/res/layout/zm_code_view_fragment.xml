@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@color/zm_code_view_title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/zm_picker_titlebar_height">
+        <TextView android:textSize="16.0dip" android:textColor="@color/zm_black" android:layout_gravity="center" android:id="@id/zm_code_view_title_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Untitled" />
+        <ImageView android:layout_gravity="right|center" android:id="@id/zm_code_view_close_btn" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="13.0dip" android:src="@drawable/zm_btn_viewer_close" />
+    </FrameLayout>
+    <View android:background="@color/zm_code_view_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <com.zipow.videobox.view.ZMCodeView android:id="@id/codeView" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0" />
+    <View android:background="@color/zm_code_view_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/zm_white" android:layout_width="fill_parent" android:layout_height="46.0dip">
+        <TextView android:textSize="14.0dip" android:textColor="@color/zm_code_view_bottom_txt" android:id="@id/zm_code_view_bottom_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="" />
+        <LinearLayout android:gravity="right|center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/zm_code_view_more_btn" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="11.0dip" android:src="@drawable/zm_ic_btn_more" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/zm_list_bg_grey" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout android:id="@id/panelTitleBar" android:layout_width="fill_parent" android:layout_height="@dimen/zm_pt_titlebar_height" zoom:zm_leftButton="@id/btnBack" zoom:zm_rightButton="@id/viewRight" zoom:zm_title="@id/txtTitle" style="@style/ZMTitleBar">
+        <Button android:id="@id/btnBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:contentDescription="@string/zm_btn_back" style="@style/ZMBackButton" />
+        <View android:id="@id/viewRight" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+        <TextView android:gravity="center_horizontal" android:id="@id/txtTitle" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_title_live_transcript_82883" style="@style/ZMTextView.Title" />
+    </us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipeRefreshLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <us.zoom.androidlib.util.ZMRecyclerView android:id="@id/show_transcript" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" style="@style/MMChatListView" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <TextView android:gravity="center" android:id="@id/showEmptyTipView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/zm_live_transcript_tip_empty_82883" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/zm_gray_6C6C7F" android:id="@id/key" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" style="@style/UIKitTextView.SecondaryText.Small" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/fields_normal_linear" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.zipow.videobox.markdown.RoundedSpanBgTextView android:ellipsize="end" android:id="@id/value" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="4" style="@style/UIKitTextView.SecondaryText" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/zm_ui_kit_color_blue_0E71EB" android:id="@id/showMore" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="12.0dip" android:text="@string/zm_mm_template_message_show_more_68416" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/fields_extend_linear" android:visibility="gone" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.zipow.videobox.markdown.RoundedSpanBgTextView android:id="@id/extendValue" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/UIKitTextView.SecondaryText" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/zm_ui_kit_color_blue_0E71EB" android:id="@id/showLess" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="12.0dip" android:text="@string/zm_mm_template_message_show_less_68416" />
+        </LinearLayout>
+        <ImageView android:id="@id/edit" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/zm_mm_message_template_fields_edit" android:layout_marginStart="5.0dip" />
+    </LinearLayout>
+</LinearLayout>

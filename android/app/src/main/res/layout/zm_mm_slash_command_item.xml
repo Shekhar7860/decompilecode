@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/slash_command_item_top_blank" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="16.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/slash_command_item_owner_linear" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="24.0dip">
+        <com.zipow.videobox.view.AvatarView android:id="@id/slash_command_item_owner_avatar" android:layout_width="16.0dip" android:layout_height="16.0dip" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/zm_ui_kit_color_gray_747487" android:id="@id/slash_command_item_owner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="Giphy" android:layout_marginStart="8.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/zm_slash_popup_item_bg" android:paddingLeft="16.0dip" android:paddingTop="9.0dip" android:paddingRight="16.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textStyle="bold" android:id="@id/slash_command_item_command_profix" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/giphy" android:singleLine="true" style="@style/UIKitTextView.CellTitle" />
+            <TextView android:id="@id/slash_command_item_command" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="test" android:singleLine="true" style="@style/UIKitTextView.CellTitle" />
+        </LinearLayout>
+        <TextView android:id="@id/slash_command_item_dec" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="post a random gif" style="@style/UIKitTextView.SecondaryText.Medium.Dimmed" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/zm_pt_titlebar_height" style="@style/ZMTitleBar.Search">
+        <Button android:id="@id/btnBack" android:layout_width="25.0dip" android:layout_height="wrap_content" android:text="" android:layout_centerVertical="true" android:contentDescription="@string/zm_btn_back" style="@style/ZMBackButton.OnLight" />
+        <RelativeLayout android:id="@id/panelSearchBar" android:background="@drawable/zm_white_search_corner_bg" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/btnSearch" android:layout_toRightOf="@id/btnBack" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true">
+            <ImageView android:id="@id/imgSearch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/zm_ic_search" android:layout_centerVertical="true" />
+            <EditText android:textColorHint="@color/zm_im_search_text_hint" android:id="@id/edtSearch" android:paddingRight="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/zm_hint_enter_email" android:layout_toRightOf="@id/imgSearch" android:layout_centerVertical="true" android:imeOptions="actionSearch" style="@style/ZMEditText.GlobalSearch" />
+            <Button android:id="@id/btnClearSearchView" android:background="@drawable/zm_btn_clear_search_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/zm_description_mm_btn_clear_search_75317" />
+        </RelativeLayout>
+        <Button android:id="@id/btnSearch" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/zm_btn_search" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/ZMButton.TitleBar.Search" />
+    </RelativeLayout>
+    <View android:background="@color/zm_im_search_shadow" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/searchRecyclerView" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

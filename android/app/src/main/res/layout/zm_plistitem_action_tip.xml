@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.androidlib.widget.ZMVerticalImageTextButton android:id="@id/btnMakeHost" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="Make Host" zoom:zm_image="@drawable/zm_audio_on" style="@style/ZMButton.Small" />
+    <us.zoom.androidlib.widget.ZMVerticalImageTextButton android:id="@id/btnChat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="Chat" zoom:zm_image="@drawable/zm_audio_on" style="@style/ZMButton.Small" />
+    <us.zoom.androidlib.widget.ZMVerticalImageTextButton android:id="@id/btnMute" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="Mute" zoom:zm_image="@drawable/zm_audio_on" style="@style/ZMButton.Small" />
+    <us.zoom.androidlib.widget.ZMVerticalImageTextButton android:id="@id/btnUnmute" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="Unmute" zoom:zm_image="@drawable/zm_audio_on" style="@style/ZMButton.Small" />
+    <us.zoom.androidlib.widget.ZMVerticalImageTextButton android:id="@id/btnExpel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="Expel" zoom:zm_image="@drawable/zm_audio_on" style="@style/ZMButton.Small" />
+</LinearLayout>

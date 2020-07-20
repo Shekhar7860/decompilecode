@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/iv_photo" android:background="@drawable/zm_picker_photo_bg" android:padding="1.0dip" android:layout_width="@dimen/zm_picker_bottom_photo_size" android:layout_height="@dimen/zm_picker_bottom_photo_size" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+    <View android:id="@id/cover" android:background="@color/zm_half_translucent_white" android:padding="1.0dip" android:visibility="gone" android:layout_width="@dimen/zm_picker_bottom_photo_size" android:layout_height="@dimen/zm_picker_bottom_photo_size" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+</FrameLayout>

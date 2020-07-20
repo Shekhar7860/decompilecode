@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/zm_white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textStyle="bold" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_lbl_your_personal_space_79032" style="@style/ZMTextView.ExtremLarge.OnLight" />
+    <TextView android:gravity="center" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="66.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="66.0dip" android:layout_marginBottom="24.0dip" android:text="@string/zm_lbl_take_notes_desc_79032" style="@style/ZMTextView.OnLight.Medium" />
+    <TextView android:textStyle="bold" android:gravity="center" android:id="@id/btn_show_me" android:background="@drawable/zm_btn_stroke_rounded_rect_gray" android:paddingLeft="45.0dip" android:paddingRight="45.0dip" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="@string/zm_lbl_show_me_79032" style="@style/ZMTextView.OnLight.Medium" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/zm_dialog_option_titlebg" android:padding="20.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:ellipsize="end" android:id="@id/txtName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/ZMTextView.OptionTitle" />
+    <ListView android:id="@id/headSmallTitles" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@null" />
+</LinearLayout>

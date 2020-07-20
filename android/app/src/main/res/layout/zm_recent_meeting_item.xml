@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/zm_settings_item_selector" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:ellipsize="end" android:gravity="left|center" android:layout_gravity="center_vertical" android:id="@id/txtTopic" android:paddingRight="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" style="@style/ZMTextView.Medium" />
+    <TextView android:gravity="right|center" android:layout_gravity="center_vertical" android:id="@id/txtId" android:layout_width="120.0dip" android:layout_height="wrap_content" style="@style/ZMTextView.Medium" />
+</LinearLayout>

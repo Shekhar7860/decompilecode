@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:gravity="left|center" android:id="@id/check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_msg_mute_all_allow_unmute_self" style="@style/ZMTextView.Normal.OnLight" />
+</LinearLayout>

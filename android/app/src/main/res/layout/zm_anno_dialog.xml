@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/zm_corner_bg_gray_9" android:layout_width="194.0dip" android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="18.0dip" />
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/id_wb_dialog_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:drawableLeft="@drawable/zm_anno_wb_confirm" />
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="17.0dip" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/zm_annotate_bar_color" android:gravity="center" android:id="@id/id_wb_dialog_title" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="18.0dip" android:text="@string/zm_anno_save_to_photos_46296" android:textAlignment="center" />
+    </LinearLayout>
+</FrameLayout>

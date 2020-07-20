@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="zm_empty_array_51221" />
+    <string-array name="zm_mdm_three_choice_able_entry_51221">
+        <item>default</item>
+        <item>disabled</item>
+        <item>enabled</item>
+    </string-array>
+    <string-array name="zm_mdm_three_choice_entry_51221">
+        <item>default</item>
+        <item>false</item>
+        <item>true</item>
+    </string-array>
+    <string-array name="zm_mdm_three_choice_entry_values_51221">
+        <item>@string/zm_mdm_choice_entry_default_value_51221</item>
+        <item>@string/zm_mdm_choice_entry_no_value_51221</item>
+        <item>@string/zm_mdm_choice_entry_yes_value_51221</item>
+    </string-array>
+    <string-array name="zm_mdm_two_choice_able_entry_51221">
+        <item>disabled</item>
+        <item>enabled</item>
+    </string-array>
+    <string-array name="zm_mdm_two_choice_entry_51221">
+        <item>false</item>
+        <item>true</item>
+    </string-array>
+    <string-array name="zm_mdm_two_choice_entry_values_51221">
+        <item>@string/zm_mdm_choice_entry_no_value_51221</item>
+        <item>@string/zm_mdm_choice_entry_yes_value_51221</item>
+    </string-array>
+</resources>

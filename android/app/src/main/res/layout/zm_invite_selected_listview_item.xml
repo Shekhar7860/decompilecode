@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="45.0dip" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <com.zipow.videobox.view.AvatarView android:id="@id/avatarView" android:layout_width="40.0dip" android:layout_height="40.0dip" zoom:zm_avatarBorderColor="@color/zm_highlight" />
+</LinearLayout>

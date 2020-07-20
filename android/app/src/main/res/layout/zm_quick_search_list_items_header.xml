@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/zm_quick_search_list_group_header_bg" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/starredIcon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:src="@drawable/zm_mm_starred_list_head_icon" />
+    <TextView android:ellipsize="end" android:id="@id/txtHeader" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="A" android:maxLines="1" style="@style/ZMTextView.Large.Dimmed" />
+</LinearLayout>

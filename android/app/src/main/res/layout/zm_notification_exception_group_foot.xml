@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zoom="http://schemas.android.com/apk/res-auto">
+    <us.zoom.androidlib.widget.ZMSettingsLayout android:orientation="vertical" android:paddingLeft="0.0dip" android:paddingTop="@dimen/zm_setting_item_group_spacing" android:paddingRight="0.0dip" android:paddingBottom="@dimen/zm_setting_item_group_spacing" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/paneResetAll" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@drawable/zm_button_text_color" android:gravity="left|center" android:background="@color/zm_white" android:paddingLeft="@dimen/zm_setting_item_padding_left" android:paddingRight="@dimen/zm_setting_item_padding_right" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/zm_lbl_notification_reset_exception_group_19898" style="@style/ZMButton.SettingsItem" />
+            </RelativeLayout>
+        </us.zoom.androidlib.widget.ZMSettingsCategory>
+    </us.zoom.androidlib.widget.ZMSettingsLayout>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/panelSearch" android:background="@color/zm_im_search_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/zm_pt_titlebar_height" style="@style/ZMTitleBar.Search">
+        <Button android:id="@id/btnBack" android:layout_width="25.0dip" android:layout_height="wrap_content" android:text="" android:layout_centerVertical="true" android:contentDescription="@string/zm_btn_back" style="@style/ZMBackButton.OnLight" />
+        <RelativeLayout android:id="@id/panelSearchBar" android:background="@drawable/zm_white_search_corner_bg" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/btnSearch" android:layout_toRightOf="@id/btnBack" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true">
+            <ImageView android:id="@id/imgSearch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/zm_ic_search" android:layout_centerVertical="true" />
+            <EditText android:textColorHint="@color/zm_im_search_text_hint" android:id="@id/edtSearch" android:paddingRight="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/zm_hint_search_messages_18680" android:layout_toRightOf="@id/imgSearch" android:layout_centerVertical="true" android:imeOptions="actionSearch" style="@style/ZMEditText.GlobalSearch" />
+            <Button android:id="@id/btnClearSearchView" android:background="@drawable/zm_btn_clear_search_view" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/zm_description_mm_btn_clear_search_75317" />
+        </RelativeLayout>
+        <Button android:id="@id/btnSearch" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/zm_btn_search" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/ZMButton.TitleBar.Search" />
+    </RelativeLayout>
+    <View android:background="@color/zm_im_search_shadow" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <FrameLayout android:id="@id/listContainer" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/panel_listview_message_title" android:background="@color/zm_ui_kit_color_gray_F7F7FC" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                <TextView android:textSize="13.0sp" android:textColor="@color/zm_im_search_text_hint" android:gravity="center" android:id="@id/sort_by_button" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:text="@string/zm_lbl_search_sort_by_relevant_119637" android:drawableRight="@drawable/zm_ic_down_arrow_gray" android:drawablePadding="5.0dip" />
+            </LinearLayout>
+            <com.zipow.videobox.view.mm.MMContentSearchMessagesListView android:id="@id/listViewContentMessages" android:background="@drawable/zm_listview_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@android:color/transparent" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/panelEmptyView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:gravity="center" android:id="@id/txtEmptyView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/zm_lbl_content_search_result_empty" style="@style/ZMTextView.SettingsItem" />
+            <TextView android:gravity="center" android:id="@id/txtLoadingError" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/zm_lbl_content_load_error" style="@style/ZMTextView.SettingsItem" />
+            <TextView android:gravity="center" android:id="@id/txtContentLoading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_lbl_pull_down_refresh_list_loading" android:drawableTop="@drawable/zm_ic_conent_loading" android:drawablePadding="10.0dip" style="@style/ZMTextView.SettingsItem" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

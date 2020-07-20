@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23.0dip" style="@style/UIKitTextView.DialogTitle" />
+    <TextView android:id="@id/msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="21.0dip" android:layout_marginTop="18.0dip" android:layout_marginRight="21.0dip" android:layout_marginBottom="20.0dip" style="@style/UIKitTextView.Small" />
+    <View style="@style/ZMBlackLine" />
+    <TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/btnPositive" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ZMTextView.DialogItem" />
+    <View style="@style/ZMBlackLine" />
+    <TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/btnNeutral" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ZMTextView.DialogItem" />
+    <View style="@style/ZMBlackLine" />
+    <TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/btnNegative" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ZMTextView.DialogItem" />
+</LinearLayout>

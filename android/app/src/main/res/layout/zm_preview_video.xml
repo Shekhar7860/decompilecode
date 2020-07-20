@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/zm_white" android:paddingLeft="@dimen/zm_preview_width_margin" android:paddingRight="@dimen/zm_preview_width_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/panelTopBar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/btnLeave" android:paddingLeft="8.0dip" android:paddingTop="8.0dip" android:paddingRight="-1.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:src="@drawable/zm_btn_close" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@string/zm_btn_leave_conf" style="@style/ZMTextView.Title.OnLight" />
+        <TextView android:textSize="28.0sp" android:textStyle="bold" android:id="@id/txtTitle" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_dialog_margin_21dp" android:text="@string/zm_title_video_preview_95788" android:layout_below="@id/btnLeave" android:layout_alignParentLeft="true" style="@style/ZMTextView.Title.OnLight" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/panelSurfaceHolder" android:background="@color/zm_transparent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+        <SurfaceView android:id="@id/svPreview" android:layout_width="fill_parent" android:layout_height="360.0dip" />
+        <LinearLayout android:gravity="left|center" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/optionTurnOnVideoWithoutPreview" android:background="@color/zm_preview_translucent_black" android:paddingLeft="12.0dip" android:paddingTop="4.0dip" android:paddingRight="12.0dip" android:paddingBottom="4.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <TextView android:textSize="@dimen/zm_font_size_medium" android:textColor="@color/zm_white" android:gravity="left|center" android:paddingLeft="0.0dip" android:paddingTop="4.0dip" android:paddingRight="4.0dip" android:paddingBottom="4.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/zm_lbl_turn_on_video_without_preview_95788" android:layout_weight="1.0" style="@style/ZMTextView.SettingsItem" />
+            <us.zoom.androidlib.widget.ZMCheckedTextView android:id="@id/chkTurnOnVideoWithoutPreview" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/zm_btn_toggle_default" />
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/panelBottom" android:background="@color/zm_white" android:paddingTop="16.0dip" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="@dimen/zm_ui_kit_text_size_16sp" android:id="@id/btnJoinWithVideo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/zm_btn_join_with_video_95788" style="@style/ZMButton.HappyPath" />
+        <Button android:textSize="@dimen/zm_ui_kit_text_size_16sp" android:textStyle="normal" android:textColor="@color/zm_text_dark" android:id="@id/btnJoinWithoutVideo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/zm_btn_join_without_video_95788" android:alpha="0.6" style="@style/ZMButton.HappyPath.Gray" />
+    </LinearLayout>
+</LinearLayout>
